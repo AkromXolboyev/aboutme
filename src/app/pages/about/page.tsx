@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { FC } from "react";
+import DownloadCV from '@/components/general/download-cv';
 
 const About: FC = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between p-8 bg-black text-white min-h-screen space-y-10 md:space-y-0">
       {/* Matn qismi */}
       <div className="md:w-1/2 space-y-4 text-center md:text-left">
-        <p className="text-gray-400 text-sm md:text-base">Hi, I am</p>
-        <h1 className="text-3xl md:text-5xl font-bold text-orange-500">
+        <p className="text-white text-[18px] md:text-base">Hi, I am</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-orange-500">
           Kalbayev Akrom
         </h1>
         <h2 className="text-xl md:text-3xl font-semibold">Frontend Developer</h2>
@@ -24,7 +25,9 @@ const About: FC = () => {
         <div className="flex justify-center md:justify-start space-x-4 mt-6">
           <Button className="bg-orange-500 text-white px-6 py-3">Hire Me</Button>
           <Button className="text-white border-white px-6 py-3">
-            Download CV
+           <div>
+           <DownloadCV />
+           </div>
           </Button>
         </div>
 

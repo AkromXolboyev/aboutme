@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Image src="/logotip.png" alt="Logo" width={60} height={60} />
         </div>
-
+        
         {/* Navigation Links */}
         <nav className="hidden md:flex gap-8 transition  hover:duration-150 ">
           <Link href="/">

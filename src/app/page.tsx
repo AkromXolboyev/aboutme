@@ -4,7 +4,7 @@ import Skills from "@/components/skills"
 import About from "./pages/about/page"
 export default function Home() {
   return (
-    <div className="container mx-auto">
+    <div className=" mx-auto ">
       <Header />
       <main className="bg-darkBlue min-h-screen">
         {/* Other sections can be added here */}
