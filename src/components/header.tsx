@@ -6,10 +6,11 @@ import Image from "next/image";
 const Header: React.FC = () => {
   return (
     <header>
-      <div className="bg-darkBlue text-white shadow-lg p-4 flex items-center justify-between   mx-auto m-0">
+      <div className="bg-darkBlue text-white shadow-lg p-4 flex items-center justify-between z-50 fixed w-[100%]  mx-auto m-0">
         {/* Logo */}
         <div className="flex items-center">
-          <Image src="/logotip.png" alt="Logo" width={60} height={60} />
+          <h1 className="text-orange-500 font-bold text-3xl">LOGO</h1>
+          {/* <Image src="/logotip.png" alt="Logo" width={60} height={60} /> */}
         </div>
         
         {/* Navigation Links */}

@@ -1,21 +1,23 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { FC } from "react";
-import DownloadCV from '@/components/general/download-cv';
+import DownloadCV from "@/components/general/download-cv";
 
 const About: FC = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between p-8 bg-black text-white min-h-screen space-y-10 md:space-y-0">
       {/* Matn qismi */}
-      <div className="md:w-1/2 space-y-4 text-center md:text-left">
+      <div className="md:w-1/2 space-y-4 text-center md:text-left ">
         <p className="text-white text-[18px] md:text-base">Hi, I am</p>
         <h1 className="text-4xl md:text-5xl font-bold text-orange-500">
           Kalbayev Akrom
         </h1>
-        <h2 className="text-xl md:text-3xl font-semibold">Frontend Developer</h2>
+        <h2 className="text-xl md:text-3xl font-semibold">
+          Frontend Developer
+        </h2>
 
         {/* Ijtimoiy Media Ikonkalari */}
-        <div className="flex justify-center md:justify-start space-x-4 mt-4">
+        <div className="flex justify-center md:justify-start space-x-4 mt-5">
           <i className="fab fa-instagram text-xl md:text-2xl"></i>
           <i className="fab fa-twitter text-xl md:text-2xl"></i>
           <i className="fab fa-behance text-xl md:text-2xl"></i>
@@ -23,26 +25,26 @@ const About: FC = () => {
 
         {/* Tugmalar */}
         <div className="flex justify-center md:justify-start space-x-4 mt-6">
-          <Button className="bg-orange-500 text-white px-6 py-3">Hire Me</Button>
-          <Button className="text-white border-white px-6 py-3">
-           <div>
-           <DownloadCV />
-           </div>
+          <Button className="bg-orange-500 text-white px-6 py-3">
+            Hire Me
           </Button>
+          <div className="text-white">
+            <DownloadCV />
+          </div>
         </div>
 
         {/* Statistika qismi */}
         <div className="grid grid-cols-3 gap-4 justify-around mt-10">
           <div className="text-center">
-            <p className="text-xl md:text-2xl font-bold text-orange-500">5+</p>
+            <p className="text-xl md:text-2xl font-bold text-orange-500">1+</p>
             <p className="text-sm md:text-base">Experiences</p>
           </div>
           <div className="text-center">
-            <p className="text-xl md:text-2xl font-bold text-orange-500">20+</p>
+            <p className="text-xl md:text-2xl font-bold text-orange-500">5+</p>
             <p className="text-sm md:text-base">Projects Done</p>
           </div>
           <div className="text-center">
-            <p className="text-xl md:text-2xl font-bold text-orange-500">80+</p>
+            <p className="text-xl md:text-2xl font-bold text-orange-500">10+</p>
             <p className="text-sm md:text-base">Happy Clients</p>
           </div>
         </div>
@@ -53,9 +55,9 @@ const About: FC = () => {
         <Image
           src="/my-picture.jpg"
           alt="Mahmood Fazile"
-          width={300}
-          height={300}
-          className="rounded-full border border-gray-700"
+          width={350}
+          height={350}
+          className="rounded-full   "
         />
       </div>
     </div>

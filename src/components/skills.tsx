@@ -1,5 +1,5 @@
 // components/Skills.tsx
-import React from 'react';
+import React from "react";
 
 interface Skill {
   name: string;
@@ -7,23 +7,23 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'ReactJS', level: 85 },
-  { name: 'NextJS', level: 73 },
-  { name: 'HTML/CSS/JS', level: 75 },
-  { name: 'TypeScript', level: 64 },
-  { name: 'Tailwind CSS', level: 95 },
-  { name: 'React Query/Zustand', level: 60 },
-  { name: 'Libraries: MUI/Antd', level: 80 },
+  { name: "ReactJS", level: 85 },
+  { name: "NextJS", level: 73 },
+  { name: "HTML/CSS/JS", level: 75 },
+  { name: "TypeScript", level: 64 },
+  { name: "Tailwind CSS", level: 95 },
+  { name: "React Query/Zustand", level: 60 },
+  { name: "Libraries: MUI/Antd", level: 80 },
 ];
 
 const Skills: React.FC = () => {
   return (
-    <section className="p-8 text-center text-white container mx-auto">
+    <section className="p-8 text-center text-white container mx-auto relative z-0 ">
       <h2 className="text-3xl font-bold mb-8">My skills</h2>
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap  justify-center gap-8 border-gray-400 rounded-50 rounded-br px-7 py-5 border-2">
         {skills.map((skill) => (
-          <div key={skill.name} className="relative w-24 h-24">
-            <svg className="w-full h-full">
+          <div key={skill.name} className="relative w-117 h-117 p-5">
+            <svg className="w-full h-full ">
               <circle
                 cx="50%"
                 cy="50%"
@@ -51,10 +51,10 @@ const Skills: React.FC = () => {
                 <stop offset="100%" style={{ stopColor: "#00d4ff" }} />
               </linearGradient>
             </defs>
-            <span className="absolute inset-0 flex items-center justify-center text-xl font-semibold">
+            <span className="absolute inset-0 flex items-center justify-center text-xl font-semibold ">
               {skill.level}%
             </span>
-            <p className="mt-2 text-sm">{skill.name}</p>
+            <p className=" text-[26px] ">{skill.name}</p>
           </div>
         ))}
       </div>
